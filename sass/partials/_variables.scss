@@ -1,0 +1,38 @@
+// Colors
+$black: 								#000000 !default;
+$white: 								#ffffff !default;
+$offWhite: 							darken(#ffffff, 20%) !default;
+$transBlack: 						rgba($black, .4) !default;
+$highlight: 						lighten(#51cfc4, 20%) !default;
+$action: 						  	#12679b !default;
+
+
+// Typography
+$baseFontFamily: 				'Varela', sans-serif;
+$baseFontSize: 				  1em !default;
+$baseLineHeight: 				20px !default;
+$headingFontFamily: 		'Ubuntu', sans-serif;
+$headingFontSize: 			1.1em !default;
+$sidebar: 							#666565 !default;
+
+
+// Layout
+$padding: 							3em !default;
+$buttonLight: 					.3em !default;
+
+
+
+// Slider
+$sliderNo: 							6 !default;
+$sliderTotalWidth: 			$sliderNo*70 !default;
+$sliderPercentWidth: 		percentage($sliderTotalWidth/100) !default;
+$sliderDivide: 					100 !default;
+$slideWidth: 						$sliderTotalWidth/$sliderNo !default;
+$slidePercentWidth: 		percentage($slideWidth/100) !default;
+
+// Mixins
+@mixin hideText() {
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
+}

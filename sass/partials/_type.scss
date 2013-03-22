@@ -1,0 +1,30 @@
+
+body {
+	// *(* Need a complete font stack
+	font-family: $baseFontFamily;
+	font-size: $baseFontSize;
+}
+
+a {
+	text-decoration: none;
+	@include single-transition(all, .5s, ease);
+	&:hover, &:focus {
+	}
+}
+h1 {
+	font-family: $headingFontFamily;
+	font-size: $headingFontSize;
+	font-weight: bold;
+	letter-spacing: .1em;
+}
+h2 {
+	font-family: $headingFontFamily;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-bottom: $padding/5;
+}
+p {
+	color: $offWhite;
+	line-height: $baseLineHeight;
+	padding-bottom: $padding/5;
+}

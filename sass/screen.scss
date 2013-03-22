@@ -1,0 +1,423 @@
+// Google fonts
+@import url(http://fonts.googleapis.com/css?family=Varela);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:700);
+
+// Compass shtuff
+// Reset shtuff
+@import "compass/reset";
+
+@import "compass/css3";
+@import "compass/utilities";
+@import "compass/typography/text/replacement";
+
+// Sass partials
+@import "partials/variables";
+@import "partials/type";
+
+// Main styles - Game On!
+* {
+	@include box-sizing(border-box);
+}
+body {
+	// *(* Might need to look at the tiled background again for better alignment
+	background: url(../images/bg-green.jpg);
+	max-width: 1100px;
+	margin: 0 auto;
+	height: 100%;
+	position: relative;
+}
+// Responisve images
+img {
+	width: 100%;
+}
+.offscreen {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	display: block;
+	width: 0;
+	height: 0;
+}
+
+// Site Utilities
+.utilities {
+	float: right;
+	background: $transBlack;
+	font-size: 90%;
+	padding: $padding/5;
+	.links {
+		padding: 2px $padding/5 0 0;
+		float: left;
+	}
+	a {
+		text-decoration: none;
+		color: $white;
+		@include opacity(.7);
+		padding: $padding/6 $padding/5 $padding/5;
+		margin: 1px $padding/10 0 0;
+		vertical-align: middle;
+		&:hover, &:focus {
+			@include opacity(1);
+		}
+	}
+	.facebook {
+		width: 30px;
+		height: 30px;
+		@include hideText();
+		display: inline-block;
+		background: transparent url(../images/icon-facebook.png) no-repeat;
+	}
+	.tel {
+		padding-left: $padding;
+		background: transparent url(../images/icon-phone.png) no-repeat 9% 45%;
+	}
+	form {
+		float: right;
+	}
+	input {
+		background: rgba($black, .4);
+		border: none;
+		padding: $padding/3;
+		margin: 0;
+		color: $white;
+		width: $padding*3;
+		@include border-radius(0); // border radius for the sake of iOS
+		&:focus {
+			@include single-transition(all, .3s, linear);
+			background: rgba($black, .8);
+			width: $padding*5;
+		}
+	}
+	.btn-search {
+		border: none;
+		padding: $padding/3 0;
+		margin: 0;
+		width: $padding;
+		@include hideText();
+		color: $white;
+		background: rgba($black, .8) url(../images/icon-search.png) no-repeat 50% 12px;
+		&:hover, &:focus {
+			background: rgba($black, 1) url(../images/icon-search.png) no-repeat 50% -14px;
+		}
+	}
+}
+
+// Navigation strip
+.sidebar {
+		display: inline-block;
+		background: $white url(../images/bg-sidebar.png) repeat;
+		min-height: 100%;
+		width: 30%;
+		@include box-shadow(0 0 $padding/2 rgba($black, .8));
+		padding: $padding/2;
+		@include text-shadow($white 1px 1px 1px);
+		h1 {
+			margin: 0 auto;
+			max-width: 254px;
+		}
+		h2 {
+			color: $sidebar;
+		}
+		a {
+			color: $sidebar;
+			padding: $padding/4 $padding/3;
+			display: inline-block;
+			@include border-radius(5px); // border radius
+			@include background-clip(padding-box); // prevents bg color from leaking outside the border
+			border: 1px solid rgba(0,0,0,0); // stroke
+			&:hover, &:focus, &.current {
+				background: rgba($white, .3);
+				border: 1px solid rgba(0,0,0,.04); // stroke
+				@include box-shadow(inset 0 0 2px rgba(0,0,0,.15)); // inner glow
+			}
+		}
+		nav.main-nav {
+			padding: $padding/3;
+			margin: 0 -$padding/3;
+			li {
+				display: inline-block;
+				width: 49%;
+				margin-bottom: .2em;
+			}
+			text-transform: lowercase;
+		}
+		img {
+			display: block;
+			margin: $padding/1.5 auto $padding;
+		}
+		nav.secondary-nav {
+			text-align: center;
+			margin-bottom: $padding;
+			li {
+				display: inline-block;
+				width: 100%;
+			}
+		}
+}
+
+// Main layout
+.main {
+	padding: $padding 0 0 $padding;
+	// display: inline-block;
+	position: absolute;
+	top: $padding;
+	left: 30%;
+	width: 70%;
+	.module {
+		margin-bottom: $padding/2;
+		padding: $padding/2;
+		background: $transBlack;
+		color: $white;
+	}
+}
+
+// Slider module
+.slider {
+	ul {
+		position: relative;
+	  list-style: none;
+	  overflow: hidden;
+	  width: 100%;
+	  padding: 0;
+	  margin: 0;
+		// height: 200px;
+		// width: $sliderPercentWidth;
+	}
+	li {
+		// display: inline-block;
+		// width: $slidePercentWidth;
+		// float: left;
+		// *(* temporarily set the background of the slides
+		height: 300px;
+		background: $white;
+		-webkit-backface-visibility: hidden;
+	  position: absolute;
+	  display: none;
+	  width: 100%;
+	  left: 0;
+	  top: 0;
+	  &:first-child {
+		  position: relative;
+		  display: block;
+		  float: left;
+	  }
+	}
+	a {}
+}
+
+//  Full width
+.full-width {
+	width: 100%;
+}
+
+// Tag line
+.tag-line {
+	p {
+		text-align: center;
+		font-size: 110%;
+		font-style: italic;
+		line-height: 140%;
+		padding-bottom: 0;
+	}
+}
+
+.column {
+	display: inline-block;
+	width: 48%;
+	vertical-align: top;
+	&:nth-of-type(odd) {
+		margin-right: 2%;
+	}
+	&:nth-of-type(even) {
+		margin-left: 2%;
+	}
+	h1 {
+		text-transform: uppercase;
+		padding-bottom: $padding/2;
+	}
+	h2 {
+		padding-bottom: $padding/3;
+	}
+	dl {
+		font-size: 90%;
+		padding-bottom: $padding/5;
+		dt {
+			padding-bottom: $padding/5;
+			color: $offWhite;
+			&:after {
+				content: " :";
+			}
+		}
+		dd {
+			font-size: 110%;
+			padding-bottom: $padding/5;
+			font-family: $headingFontFamily;
+			font-weight: bold;
+			line-height: $baseLineHeight*1.5;
+		}
+	}
+	em, time {
+		font-weight: normal;
+		font-size: 90%;
+		color: $offWhite;
+		display: block;
+	}
+	time {
+		text-align: right;
+		color: $highlight;
+	}
+	img {
+		border: $padding/5 solid rgba($black, .4);
+		@include border-radius(15px);
+	}
+}
+.menu {
+	text-align: center;
+	li {
+		display: block;
+		margin-bottom: 1px;
+		a {
+			display: block;
+			padding: $padding/3 0;
+			color: $offWhite;
+			background: rgba($black, .4);
+			&:hover, &:focus {
+				color: $white;
+				background: rgba($white, .2);
+			}
+		}
+	}
+}
+.news {
+	h2 {
+		text-transform: none;
+		line-height: 120%;
+	}
+	article {
+		padding-bottom: $padding/2;
+		&:last-child {
+			padding-bottom: 0;
+		}
+	}
+	p {
+		font-size: 90%;
+	}
+}
+.contact {
+	dl {
+		margin-top: -$padding/3;
+	}
+	dt {
+		@include hideText();
+	}
+	dd {
+		padding-left: $padding*1.35;
+		min-height: $padding;
+	}
+	.call {
+		background: transparent url(../images/icon-phone-blue.png) no-repeat 2% 5%;
+		a {
+			color: $white;
+			font-size: 120%;
+		}
+	}
+	.hours {
+		background: transparent url(../images/icon-hours.png) no-repeat 2% 5%;
+	}
+	.address {
+		background: transparent url(../images/icon-pin.png) no-repeat 2% 5%;
+	}
+}
+.heading {
+	h1 {
+		font-size: 120%;
+	}
+}
+.product {
+	img {
+		float: right;
+		max-width: 100px;
+	}
+	dt {
+		display: inline;
+	}
+	.price {
+		background: $white;
+		color: $black;
+		display: inline-block;
+		padding: 2px 3px;
+		margin: $padding/5 0;
+		line-height: $baseLineHeight;
+	}
+}
+.about {
+	header {
+		float: right;
+		width: 40%;
+		margin-left: $padding/5;
+	}
+	img {
+		display: block;
+		max-width: 60px;
+		margin: 0 auto;
+		border: 0;
+	}
+	h1 {
+		padding-bottom: $padding/3;
+		color: $white;
+		text-align: center;
+		text-transform: none;
+		font-size: 100%;
+		em {
+			color: $white;
+			font-size: 220%;
+			font-weight: bold;
+			margin-bottom: .2em;
+			display: block;
+		}
+	}
+	em {
+		display: inline;
+		font-size: 100%;
+		color: $highlight;
+		font-weight: bold;
+	}
+}
+
+form {
+	margin-top: $padding/5;
+	label {
+		display: block;
+		margin-bottom: $padding/5;
+	}
+	input, textarea {
+		width: 100%;
+		margin-bottom: $padding/2;
+		padding: $padding/4;
+		font-size: 90%;
+		background: $white url(../images/bg-sidebar.png) repeat;
+		@include opacity(.9);
+		@include text-shadow($white 1px 1px 1px);
+		border: 0;
+		&:focus {
+			@include opacity(1);
+		}
+	}
+	input[type="submit"] {
+		background: $action;
+		color: $white;
+		padding: $padding/3.5;
+		font-size: 100%;
+		@include opacity(.7);
+		@include text-shadow(none);
+			margin-bottom: 0;
+		&:hover, &:focus {
+			@include opacity(1);
+			@include text-shadow($black 1px 1px 1px);
+			@include box-shadow(0 $buttonLight 0 darken($action, 15%));
+		}
+		&:active {
+			@include box-shadow(inset 0 $buttonLight 0 darken($action, 15%));
+		}
+	}
+}
