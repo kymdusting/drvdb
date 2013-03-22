@@ -15,10 +15,11 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="styles/screen.css"/>
+        <link href="scripts/vendor/jquery.bxslider.css" rel="stylesheet" />
         <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="scripts/vendor/modernizr.min.js"></script>
 
     </head>
     <body>

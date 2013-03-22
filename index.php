@@ -3,16 +3,56 @@ $title = 'Home';
 include("includes/header.php"); ?>
 <section class="main" role="main">
     <div class="module slider">
-        <ul>
-            <li>Slide 1</li>
-            <li>Slide 2</li>
-            <li>Slide 3</li>
-            <li>Slide 4</li>
-            <li>Slide 5</li>
-            <li>Slide 6</li>
+        <ul class="bxslider">
+            <li>
+                <img src="images/content/slider/slider-1.jpg" alt="" />
+                <article>
+                    <img src="images/content/ALGEN_EXTRACT_5L_web_small.jpg" alt="" />
+                    <h2>Some product name &ndash; <em>50% off</em></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla saepe debitis</p>
+                </article>
+            </li>
+            <li class="alt">
+                <img src="images/content/slider/slider-2.jpg" alt="" />
+                <article>
+                    <img src="images/content/ALGEN_EXTRACT_5L_web_small.jpg" alt="" />
+                    <h2>A different thing &ndash; <em>20% off</em></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla saepe debitis</p>
+                </article>
+            </li>
+            <li>
+                <img src="images/content/slider/slider-1.jpg" alt="" />
+                <article>
+                    <img src="images/content/ALGEN_EXTRACT_5L_web_small.jpg" alt="" />
+                    <h2>Some product name &ndash; <em>50% off</em></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla saepe debitis</p>
+                </article>
+            </li>
+            <li class="alt">
+                <img src="images/content/slider/slider-2.jpg" alt="" />
+                <article>
+                    <img src="images/content/ALGEN_EXTRACT_5L_web_small.jpg" alt="" />
+                    <h2>A different thing &ndash; <em>20% off</em></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla saepe debitis</p>
+                </article>
+            </li>
+            <li>
+                <img src="images/content/slider/slider-1.jpg" alt="" />
+                <article>
+                    <img src="images/content/ALGEN_EXTRACT_5L_web_small.jpg" alt="" />
+                    <h2>Some product name &ndash; <em>50% off</em></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla saepe debitis</p>
+                </article>
+            </li>
+            <li class="alt">
+                <img src="images/content/slider/slider-2.jpg" alt="" />
+                <article>
+                    <img src="images/content/ALGEN_EXTRACT_5L_web_small.jpg" alt="" />
+                    <h2>A different thing &ndash; <em>20% off</em></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla saepe debitis</p>
+                </article>
+            </li>
         </ul>
-        <a href="#" data-dir="prev">Previous slide</a>
-        <a href="#" data-dir="next">Next slide</a>
     </div>
     <aside class="module full-width tag-line">
         <p>Dr. Van Der Bloom's carries an extensive range of Hydroponics supplies for the commercial or hobby grower. Hydroponic Kits, Nutrients, Additives, Lighting, Testing Equipment, Ventilation and Filters.</p>

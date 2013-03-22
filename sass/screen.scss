@@ -21,7 +21,9 @@
 body {
 	// *(* Might need to look at the tiled background again for better alignment
 	background: url(../images/bg-green.jpg);
+	// *(* Flip the max-width and width around intially for go live
 	max-width: 1100px;
+	// width: 1100px;
 	margin: 0 auto;
 	height: 100%;
 	position: relative;
@@ -173,36 +175,62 @@ img {
 
 // Slider module
 .slider {
-	ul {
-		position: relative;
-	  list-style: none;
-	  overflow: hidden;
-	  width: 100%;
-	  padding: 0;
-	  margin: 0;
-		// height: 200px;
-		// width: $sliderPercentWidth;
-	}
 	li {
-		// display: inline-block;
-		// width: $slidePercentWidth;
-		// float: left;
-		// *(* temporarily set the background of the slides
-		height: 300px;
-		background: $white;
-		-webkit-backface-visibility: hidden;
-	  position: absolute;
-	  display: none;
-	  width: 100%;
-	  left: 0;
-	  top: 0;
-	  &:first-child {
-		  position: relative;
-		  display: block;
-		  float: left;
+	  max-height: 300px;
+	  overflow: hidden;
+	  article {
+			position: absolute;
+			top: 5%;
+			left: 10%;
+			background: rgba(0,0,0,.7);
+			color: $white;
+			width: 40%;
+			height: auto;
+			padding: 2%;
+			h2 {
+				line-height: 160%;
+				em {
+					background: $white;
+					color: $black;
+					padding: 2px 3px;
+					margin: $padding/5 0;
+					line-height: $baseLineHeight;
+				}
+			}
+			p {
+				font-size: 90%;
+			}
+			img {
+				float: right;
+				max-width: 30%;
+				border: $padding/10 solid rgba($black, .8);
+				@include border-radius(5px);
+				margin: 0 0 $padding/5 $padding/5;
+			}
 	  }
 	}
-	a {}
+	// Hang the alternate product in the opposite corner
+  .alt {
+  	article {
+  		right: 10%;
+  		left: inherit;
+  	}
+  }
+	// Overwrite plugin styles
+	.bx-wrapper {
+		margin-bottom: 30px;
+		.bx-pager.bx-default-pager a:hover, .bx-pager.bx-default-pager a:focus, .bx-pager.bx-default-pager a.active {
+			background: $white;
+		}
+		.bx-viewport {
+			left: 0;
+			border: 0;
+			@include box-shadow(none);
+		}
+	}
+	.bx-controls-direction a {
+		@include single-transition(none);
+	}
 }
 
 //  Full width
