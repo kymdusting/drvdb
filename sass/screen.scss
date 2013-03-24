@@ -54,12 +54,11 @@ img {
 	a {
 		text-decoration: none;
 		color: $white;
-		@include opacity(.7);
 		padding: $padding/6 $padding/5 $padding/5;
 		margin: 1px $padding/10 0 0;
 		vertical-align: middle;
 		&:hover, &:focus {
-			@include opacity(1);
+			@include opacity(.7);
 		}
 	}
 	.facebook {
@@ -347,6 +346,10 @@ img {
 		a {
 			color: $white;
 			font-size: 120%;
+			&:hover, &:focus {
+				text-decoration: underline;
+				color: $offWhite;
+			}
 		}
 	}
 	.hours {
@@ -429,6 +432,8 @@ form {
 		border: 0;
 		&:focus {
 			@include opacity(1);
+			outline: 2px solid $white;
+			@include box-shadow(0 0 $padding/2 rgba($black, .8));
 		}
 	}
 	input[type="submit"] {
@@ -448,4 +453,33 @@ form {
 			@include box-shadow(inset 0 $buttonLight 0 darken($action, 15%));
 		}
 	}
+}
+.response {
+	display: none;
+	color: $white;
+	position: fixed;
+	top: 25px;
+	background: $warning;
+	padding: $padding/3;
+	@include box-shadow(0 0 20px rgba(0,0,0,.8));
+	@include border-radius(5px);
+	text-align: center;
+	width: 40%;
+	left: 30%;
+}
+.success {
+	display: block;
+	background: $success url(../images/icon-success.png) no-repeat 5% 50%;
+}
+.waiting {
+	display: block;
+	background: $waiting;
+}
+.error {
+	display: block;
+	background: $error;
+}
+input.error, textarea.error {
+	background: lighten($error,10%) url(../images/icon-error.png) no-repeat 97% 7px;
+	color: $white;
 }

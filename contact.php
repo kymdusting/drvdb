@@ -14,17 +14,22 @@ include("includes/header.php"); ?>
     <section class="module column form">
       <h1>Send Us a Quick Message</h1>
       <p class="warning">Please note we in no way keep your personal information or provide that information to any third parties.</p>
-      <form action="<?=$_SERVER['PHP_SELF']; ?>" method="get">
+      <form action="<?=$_SERVER['PHP_SELF']; ?>" method="get" class="contact">
         <label for="name">Your Name</label>
         <input type="text" id="name" />
         <label for="email">E-Mail</label>
-        <input type="text" id="email" />
+        <input type="email" id="email" />
         <label for="phone">Phone</label>
-        <input type="text" id="phone" />
+        <input type="tel" id="phone" />
         <label for="message">Your Message</label>
-        <textarea name="textarea" id="message" cols="45" rows="5"></textarea>
+        <textarea name="textarea" id="message" cols="45" rows="5" placeholder="Required"></textarea>
         <input type="submit" name="button" id="button" value="Send" />
-
+        <span class="response" aria-live="polite">
+          <?php require_once('includes/contact.php');
+            if (isset($_GET['submit'])) {
+              if($_GET['submit']){ echo contactUs(); }
+            } ?>
+        </span>
       </form>
     </section><section class="module column contact">
       <h1>Our Contact Details</h1>
