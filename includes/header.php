@@ -31,8 +31,8 @@
             <section class="utilities">
                 <div class="links">
                     <a href="tel:0266519992" class="tel">02 6651 9952</a>
-                    <!-- *(* Facebook link -->
-                    <a href="#" class="facebook">Connect with us on Facebook</a>
+                    <a href="enquiry@drvanderblooms.com.au" class="email">enquiry@drvanderblooms.com.au</a>
+                    <a href="http://www.facebook.com/DrVanDerBloomsHydroponics" class="facebook">Connect with us on Facebook</a>
                 </div>
                 <!-- <form role="search">
                     <label for="search" class="offscreen">Search Dr. Van Der Blooms</label>
@@ -43,38 +43,23 @@
         <section class="sidebar">
             <nav class="main-nav" role="navigation">
                 <ul>
-                    <li><a <?php if ($title =="Home") echo('class="current"'); ?> href="index.php">Home</a></li>
-                    <li><a <?php if ($title =="Our Products") echo('class="current"'); ?>href="products.php">Our Products</a></li>
-                    <li><a href="about.php">About Us</a></li>
-                    <li><a href="contact.php">Contact Us</a></li>
+                    <li><a <?php if ($title == "Home") echo('class="current"'); ?> href="index.php">Home</a></li>
+                    <li><a <?php if (strpos($title,'Our Products') !== false) echo('class="current"'); ?> href="products.php">Our Products</a></li>
+                    <li><a <?php if (strpos($title,'About Us') !== false) echo('class="current"'); ?> href="about.php">About Us</a></li>
+                    <li><a <?php if (strpos($title,'Contact Us') !== false) echo('class="current"'); ?> href="contact.php">Contact Us</a></li>
                 </ul>
             </nav>
             <h1><img src="images/logo-drvanderblooms.png" alt="Dr. Van Der Blooms - Coffs Harbour Hydroponics" /></h1>
             <nav class="secondary-nav" role="navigation">
                 <h2>Browse By Category</h2>
                 <ul>
-                    <li><a href="#">Nutrients</a></li>
-                    <li><a href="#">Additives</a></li>
-                    <li><a href="#">Growing Mediums</a></li>
-                    <li><a href="#">Lighting / Light Kits</a></li>
-                    <li><a href="#">Fans / Filtering / Ducts</a></li>
-                    <li><a href="#">Meters / Scales /Timers</a></li>
-                    <li><a href="#">Air &amp; Water Pumps</a></li>
-                    <li><a href="#">Pots / Poly / Feed / Irrigation</a></li>
-                    <li><a href="#">Panda / Mesh / Mylar / Tents</a></li>
-                    <li><a href="#">Hardware</a></li>
-                    <li><a href="#">Pest &amp; Disease Control</a></li>
-                    <li><a href="#">Propagation</a></li>
+                    <?php include("includes/products-category.php"); ?>
                 </ul>
             </nav>
             <nav class="secondary-nav" role="navigation">
                 <h2>Browse By Brand</h2>
                 <ul>
-                    <!-- *(* Need to add brand content -->
-                    <li><a href="#">Nutrients</a></li>
-                    <li><a href="#">Additives</a></li>
-                    <li><a href="#">Growing Mediums</a></li>
-                    <li><a href="#">Lighting / Light Kits</a></li>
+                    <?php include("includes/products-brand.php"); ?>
                 </ul>
             </nav>
         </section>

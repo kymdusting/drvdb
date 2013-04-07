@@ -9,10 +9,17 @@ phpconsole($title, 'kymdusting');
 include("includes/header.php"); ?>
 <section class="main" role="main">
     <header class="module heading">
-        <h1><?php echo($title); ?></h1>
+      <h1><?php echo($title); ?></h1>
     </header>
+    <section class="module">
+      <p>Dr. Van Der Blooms Hydroponics is under New Management! New product lines including House &amp; Garden and B.A.C. are in store now. Come see Matt &amp; Scott for a personalised service for all your growing needs. With great prices and a wealth of hydroponic knowledge.</p>
+      <p>At Dr.Van Der Blooms Hydroponics we believe face to face customer service is the best way to learn and share ideas about hydroponics. Hydroponics is the growing system for the future and is the largest growing agriculture sector currently in Australia. In house instruction on all facets of hydroponics is available. So get on board and lets grow!</p>
+    </section>
+    <section class="module heading">
+      <h1>About Hydroponics</h1>
+    </section>
     <section class="module column about">
-  		<header>
+      <header>
         <h1><em>90%</em> less water</h1>
         <img src="images/icon-rain.png" alt="">
       </header>

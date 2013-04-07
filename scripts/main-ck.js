@@ -69,8 +69,7 @@
     form: $(".contact"),
     output: $(".response"),
     mandatory: {
-      message: "#message",
-      phone: "#phone"
+      message: "#message"
     },
     messages: {
       invalid: "Oops! Make sure you fill out all the required fields.",

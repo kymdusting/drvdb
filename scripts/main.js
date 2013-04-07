@@ -91,8 +91,7 @@
 		output: $('.response'),
 		mandatory: {
 			// *(* this is a bit dumb but it works
-			message: '#message',
-			phone: '#phone'
+			message: '#message'
 		},
 		messages: {
 			invalid: 'Oops! Make sure you fill out all the required fields.',

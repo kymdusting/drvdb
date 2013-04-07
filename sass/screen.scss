@@ -72,6 +72,10 @@ img {
 		padding-left: $padding;
 		background: transparent url(../images/icon-phone.png) no-repeat 9% 45%;
 	}
+	.email {
+		padding-left: $padding;
+		background: transparent url(../images/icon-email.png) no-repeat 6% 45%;
+	}
 	form {
 		float: right;
 	}
@@ -130,6 +134,7 @@ img {
 				background: rgba($white, .3);
 				border: 1px solid rgba(0,0,0,.04); // stroke
 				@include box-shadow(inset 0 0 2px rgba(0,0,0,.15)); // inner glow
+				text-decoration: none;
 			}
 		}
 		nav.main-nav {
@@ -152,6 +157,14 @@ img {
 			li {
 				display: inline-block;
 				width: 100%;
+			}
+			img {
+				padding-right: $padding/5;
+				margin: 0;
+				display: inline;
+				width: auto;
+				height: auto;
+				vertical-align: middle;
 			}
 		}
 }
@@ -303,6 +316,9 @@ img {
 	li {
 		display: block;
 		margin-bottom: 1px;
+		img {
+			display: none;
+		}
 		a {
 			display: block;
 			padding: $padding/3 0;
@@ -311,6 +327,7 @@ img {
 			&:hover, &:focus {
 				color: $white;
 				background: rgba($white, .2);
+				text-decoration: none;
 			}
 		}
 	}
@@ -347,7 +364,6 @@ img {
 			color: $white;
 			font-size: 120%;
 			&:hover, &:focus {
-				text-decoration: underline;
 				color: $offWhite;
 			}
 		}
@@ -358,6 +374,18 @@ img {
 	.address {
 		background: transparent url(../images/icon-pin.png) no-repeat 2% 5%;
 	}
+	.email {
+		background: transparent url(../images/icon-email-blue.png) no-repeat 0 0;
+		a {
+			color: $white;
+			font-size: 100%;
+			font-weight: normal;
+			&:hover, &:focus {
+				text-decoration: underline;
+				color: $offWhite;
+			}
+		}
+	}
 }
 .heading {
 	h1 {
@@ -365,9 +393,11 @@ img {
 	}
 }
 .product {
+	min-height: 225px;
 	img {
 		float: right;
 		max-width: 100px;
+		display: none;
 	}
 	dt {
 		display: inline;
