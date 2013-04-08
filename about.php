@@ -2,10 +2,6 @@
 
 $title = 'About Us';
 
-// *(* REMOVE THE PHP CONSOLE STUFF BEFORE GO LIVE
-include_once('phpconsole/install.php');
-phpconsole($title, 'kymdusting');
-
 include("includes/header.php"); ?>
 <section class="main" role="main">
     <header class="module heading">

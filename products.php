@@ -70,10 +70,6 @@ switch ($var) {
         break;
 }
 
-// *(* REMOVE THE PHP CONSOLE STUFF BEFORE GO LIVE
-include_once('phpconsole/install.php');
-phpconsole($title, 'kymdusting');
-
 include("includes/header.php"); ?>
 <section class="main products" role="main">
     <header class="module heading">
