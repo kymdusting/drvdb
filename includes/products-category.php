@@ -10,4 +10,4 @@
 <li><a <?php if (strpos($title,'Hardware / Detox') !== false) echo('class="current"'); ?> href="products.php?cat=hardware">Hardware / Detox</a></li>
 <li><a <?php if (strpos($title,'Pest &amp; Disease Control') !== false) echo('class="current"'); ?> href="products.php?cat=control">Pest &amp; Disease Control</a></li>
 <li><a <?php if (strpos($title,'Propagation') !== false) echo('class="current"'); ?> href="products.php?cat=propagation">Propagation</a></li>
-<!-- <li><a <?php if (strpos($title,'Hydroponic Kits') !== false) echo('class="current"'); ?> href="products.php?cat=hydrokits">Hydroponic Kits</a></li> -->
+<li><a <?php if (strpos($title,'Hydroponic Kits') !== false) echo('class="current"'); ?> href="products.php?cat=hydrokits">Hydroponic Kits</a></li>

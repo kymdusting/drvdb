@@ -22,8 +22,8 @@ body {
 	// *(* Might need to look at the tiled background again for better alignment
 	background: url(../images/bg-green.jpg);
 	// *(* Flip the max-width and width around intially for go live
-	max-width: 1100px;
-	// width: 1100px;
+	// max-width: 1110px;
+	width: 1100px;
 	margin: 0 auto;
 	height: 100%;
 	position: relative;
@@ -188,7 +188,6 @@ img {
 // Slider module
 .slider {
 	li {
-	  max-height: 300px;
 	  overflow: hidden;
 	  article {
 			position: absolute;
@@ -231,6 +230,7 @@ img {
 	// Overwrite plugin styles
 	.bx-wrapper {
 		margin-bottom: 30px;
+		height: auto;
 		.bx-pager.bx-default-pager a:hover, .bx-pager.bx-default-pager a:focus, .bx-pager.bx-default-pager a.active {
 			background: $white;
 		}

@@ -30,7 +30,7 @@
         <header role="banner">
             <section class="utilities">
                 <div class="links">
-                    <a href="tel:0266519992" class="tel">02 6651 9952</a>
+                    <a href="tel:0266519992" class="tel">02 6651 9992</a>
                     <a href="enquiry@drvanderblooms.com.au" class="email">enquiry@drvanderblooms.com.au</a>
                     <a href="http://www.facebook.com/DrVanDerBloomsHydroponics" class="facebook">Connect with us on Facebook</a>
                 </div>

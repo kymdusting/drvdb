@@ -31,7 +31,9 @@ include("includes/header.php"); ?>
       <h1>Our Contact Details</h1>
       <dl>
           <dt>Call us</dt>
-          <dd class="call"><a href="tel:0266519992">02 6651 9952</a></dd>
+          <dd class="call"><a href="tel:0266519992">02 6651 9992</a></dd>
+          <dt>Fax</dt>
+          <dd class="call">02 6651 2577</dd>
           <dt>Send an email</dt>
           <dd class="email"><a href="enquiry@drvanderblooms.com.au">enquiry@drvanderblooms.com.au</a></dd>
           <dt>Visit us</dt>

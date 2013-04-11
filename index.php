@@ -2,55 +2,36 @@
 $title = 'Home';
 include("includes/header.php"); ?>
 <section class="main" role="main">
-    <div class="module slider">
+    <div class="module slider" aria-hidden="true">
         <ul class="bxslider">
             <li>
                 <img src="images/content/slider/slider-1.jpg" alt="" />
-                <article>
+                <!-- <article>
                     <img src="images/content/ALGEN_EXTRACT_5L_web_small.jpg" alt="" />
                     <h2>Some product name &ndash; <em>50% off</em></h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla saepe debitis</p>
-                </article>
-            </li>
-            <li class="alt">
-                <img src="images/content/slider/slider-2.jpg" alt="" />
-                <article>
-                    <img src="images/content/ALGEN_EXTRACT_5L_web_small.jpg" alt="" />
-                    <h2>A different thing &ndash; <em>20% off</em></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla saepe debitis</p>
-                </article>
+                </article> -->
             </li>
             <li>
-                <img src="images/content/slider/slider-1.jpg" alt="" />
-                <article>
-                    <img src="images/content/ALGEN_EXTRACT_5L_web_small.jpg" alt="" />
-                    <h2>Some product name &ndash; <em>50% off</em></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla saepe debitis</p>
-                </article>
-            </li>
-            <li class="alt">
                 <img src="images/content/slider/slider-2.jpg" alt="" />
-                <article>
-                    <img src="images/content/ALGEN_EXTRACT_5L_web_small.jpg" alt="" />
-                    <h2>A different thing &ndash; <em>20% off</em></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla saepe debitis</p>
-                </article>
             </li>
             <li>
-                <img src="images/content/slider/slider-1.jpg" alt="" />
-                <article>
-                    <img src="images/content/ALGEN_EXTRACT_5L_web_small.jpg" alt="" />
-                    <h2>Some product name &ndash; <em>50% off</em></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla saepe debitis</p>
-                </article>
+                <img src="images/content/slider/slider-3.png" alt="" />
             </li>
-            <li class="alt">
-                <img src="images/content/slider/slider-2.jpg" alt="" />
-                <article>
-                    <img src="images/content/ALGEN_EXTRACT_5L_web_small.jpg" alt="" />
-                    <h2>A different thing &ndash; <em>20% off</em></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla saepe debitis</p>
-                </article>
+            <li>
+                <img src="images/content/slider/slider-4.png" alt="" />
+            </li>
+            <li>
+                <img src="images/content/slider/slider-5.png" alt="" />
+            </li>
+            <li>
+                <img src="images/content/slider/slider-6.png" alt="" />
+            </li>
+            <li>
+                <img src="images/content/slider/slider-7.jpg" alt="" />
+            </li>
+            <li>
+                <img src="images/content/slider/slider-8.jpg" alt="" />
             </li>
         </ul>
     </div>
