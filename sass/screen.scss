@@ -513,3 +513,25 @@ input.error, textarea.error {
 	background: lighten($error,10%) url(../images/icon-error.png) no-repeat 97% 7px;
 	color: $white;
 }
+
+// Feature fixes
+.no-rgba {
+	.utilities {
+		background:transparent;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#40000000,endColorstr=#40000000);
+    zoom: 1;
+	}
+	.main {
+		.module {
+			background:transparent;
+	    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#70000000,endColorstr=#70000000);
+	    zoom: 1;
+		}
+	}
+}
+.lt-ie9 {
+	.main {
+		.module {
+		}
+	}
+}

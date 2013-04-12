@@ -633,3 +633,14 @@ form {
 input.error, textarea.error {
   background: #c00000 url(../images/icon-error.png) no-repeat 97% 7px;
   color: white; }
+
+/* line 519, ../sass/screen.scss */
+.no-rgba .utilities {
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#40000000,endColorstr=#40000000);
+  zoom: 1; }
+/* line 525, ../sass/screen.scss */
+.no-rgba .main .module {
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#70000000,endColorstr=#70000000);
+  zoom: 1; }

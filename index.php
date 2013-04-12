@@ -5,7 +5,7 @@ include("includes/header.php"); ?>
     <div class="module slider" aria-hidden="true">
         <ul class="bxslider">
             <li>
-                <img src="images/content/slider/slider-1.jpg" alt="" />
+                <img src="images/content/slider/slider-8.jpg" alt="" />
                 <!-- <article>
                     <img src="images/content/ALGEN_EXTRACT_5L_web_small.jpg" alt="" />
                     <h2>Some product name &ndash; <em>50% off</em></h2>
@@ -26,12 +26,6 @@ include("includes/header.php"); ?>
             </li>
             <li>
                 <img src="images/content/slider/slider-6.png" alt="" />
-            </li>
-            <li>
-                <img src="images/content/slider/slider-7.jpg" alt="" />
-            </li>
-            <li>
-                <img src="images/content/slider/slider-8.jpg" alt="" />
             </li>
         </ul>
     </div>
