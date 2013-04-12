@@ -56,7 +56,7 @@ switch ($var) {
     case "dutchmaster":
         $title .= ' - Dutch Master';
         break;
-    case "falirform":
+    case "flairform":
         $title .= ' - Flairform';
         break;
     case "growthtech":

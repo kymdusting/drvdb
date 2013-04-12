@@ -2,8 +2,8 @@
 
 function contactUs(){
 
-    // $to      = 'enquiry@drvanderblooms.com.au';
-    $to      = 'kym@lie.lv';
+    $to      = 'enquiry@drvanderblooms.com.au';
+    // $to      = 'kym@lie.lv';
     $subject = 'Urgent : Website enquiry';
     $stringData = "Name: " . $_GET['name'] . "\r\n";
     $stringData = $stringData . "Email: " . $_GET['email'] . "\r\n";

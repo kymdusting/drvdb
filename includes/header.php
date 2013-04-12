@@ -8,11 +8,21 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Dr Van Der Bloom's Hydroponics Supplies | <?php echo($title); ?></title>
         <!-- *(* Need to add keywords from Google Adwords proposal -->
-        <meta name="keywords" content="">
+        <meta name="keywords" content="hydroponic lights, pumps garden, hydroponic lighting, coffs harbour, north coast, hydroponic tents, hydroponics supplies, lights hydroponics, hydroponic kit, water pumps garden, garden indoor, ph testers, garden water pumps, hydroponics growing, pumps water, water pumps, hydroponic gardening, grow hydroponic, hydroponics garden, gardening supplies, Nutrients, Additives, Growing Mediums, Lighting, Light Kits, Ballasts, Fans, Filters, Ducts, Meters, Scales, Timers, Air &amp; Water Pumps, Pots, Poly, Irrigation, Panda Film, Grow Tents, Hardware, Detox, Pest &amp; Disease Control, Propagation, Canna, House &amp; Garden, Dutch Master, Flairform, Growth Technology, B.A.C, OZI Magic">
         <meta name="description" content="Dr. Van Der Bloom's Hydroponics Supplies. ">
         <meta name="author" content="Light Is Everything :: http://lightiseverything.com.au">
         <!-- <meta name="viewport" content="width=device-width"> -->
+
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="shortcut icon" href="favicon.ico">
+        <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+        <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
+        <!-- For first- and second-generation iPad: -->
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png">
+        <!-- For iPhone with high-resolution Retina display: -->
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png">
+        <!-- For third-generation iPad with high-resolution Retina display: -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png">
 
         <link rel="stylesheet" href="styles/screen.css"/>
         <link href="scripts/vendor/jquery.bxslider.css" rel="stylesheet" />

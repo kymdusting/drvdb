@@ -2,10 +2,10 @@
 $title = 'Home';
 include("includes/header.php"); ?>
 <section class="main" role="main">
-    <div class="module slider" aria-hidden="true">
+    <div class="module slider">
         <ul class="bxslider">
             <li>
-                <img src="images/content/slider/slider-8.jpg" alt="" />
+                <img src="images/content/slider/slider-8.jpg" alt="Dr Van Der Blooms shopfront - Under new management" />
                 <!-- <article>
                     <img src="images/content/ALGEN_EXTRACT_5L_web_small.jpg" alt="" />
                     <h2>Some product name &ndash; <em>50% off</em></h2>
@@ -13,19 +13,19 @@ include("includes/header.php"); ?>
                 </article> -->
             </li>
             <li>
-                <img src="images/content/slider/slider-2.jpg" alt="" />
+                <img src="images/content/slider/slider-2.jpg" alt="We stock all the big brands..." />
             </li>
             <li>
-                <img src="images/content/slider/slider-3.png" alt="" />
+                <img src="images/content/slider/slider-3.png" alt="Canna - The solution for growth and bloom" />
             </li>
             <li>
-                <img src="images/content/slider/slider-4.png" alt="" />
+                <img src="images/content/slider/slider-5.png" alt="Dutch Master - The future of hydroponic nutrients" />
             </li>
             <li>
-                <img src="images/content/slider/slider-5.png" alt="" />
+                <img src="images/content/slider/slider-4.png" alt="House &amp; Garden" />
             </li>
             <li>
-                <img src="images/content/slider/slider-6.png" alt="" />
+                <img src="images/content/slider/slider-6.png" alt="Flairform - Leaders in Hydroponics" />
             </li>
         </ul>
     </div>

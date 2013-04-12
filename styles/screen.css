@@ -460,50 +460,53 @@ img {
   padding-left: 4.05em;
   min-height: 3em; }
 /* line 361, ../sass/screen.scss */
-.contact .call {
+.contact .call, .contact .fax {
   background: transparent url(../images/icon-phone-blue.png) no-repeat 2% 5%; }
   /* line 363, ../sass/screen.scss */
-  .contact .call a {
+  .contact .call a, .contact .fax a {
     color: white;
     font-size: 120%; }
     /* line 366, ../sass/screen.scss */
-    .contact .call a:hover, .contact .call a:focus {
+    .contact .call a:hover, .contact .call a:focus, .contact .fax a:hover, .contact .fax a:focus {
       color: #cccccc; }
 /* line 371, ../sass/screen.scss */
+.contact .fax {
+  background: transparent url(../images/icon-fax.png) no-repeat 3.5% 5%; }
+/* line 374, ../sass/screen.scss */
 .contact .hours {
   background: transparent url(../images/icon-hours.png) no-repeat 2% 5%; }
-/* line 374, ../sass/screen.scss */
+/* line 377, ../sass/screen.scss */
 .contact .address {
   background: transparent url(../images/icon-pin.png) no-repeat 2% 5%; }
-/* line 377, ../sass/screen.scss */
+/* line 380, ../sass/screen.scss */
 .contact .email {
   background: transparent url(../images/icon-email-blue.png) no-repeat 0 0; }
-  /* line 379, ../sass/screen.scss */
+  /* line 382, ../sass/screen.scss */
   .contact .email a {
     color: white;
     font-size: 100%;
     font-weight: normal; }
-    /* line 383, ../sass/screen.scss */
+    /* line 386, ../sass/screen.scss */
     .contact .email a:hover, .contact .email a:focus {
       text-decoration: underline;
       color: #cccccc; }
 
-/* line 391, ../sass/screen.scss */
+/* line 394, ../sass/screen.scss */
 .heading h1 {
   font-size: 120%; }
 
-/* line 395, ../sass/screen.scss */
+/* line 398, ../sass/screen.scss */
 .product {
   min-height: 225px; }
-  /* line 397, ../sass/screen.scss */
+  /* line 400, ../sass/screen.scss */
   .product img {
     float: right;
     max-width: 100px;
     display: none; }
-  /* line 402, ../sass/screen.scss */
+  /* line 405, ../sass/screen.scss */
   .product dt {
     display: inline; }
-  /* line 405, ../sass/screen.scss */
+  /* line 408, ../sass/screen.scss */
   .product .price {
     background: white;
     color: black;
@@ -512,46 +515,46 @@ img {
     margin: 0.6em 0;
     line-height: 20px; }
 
-/* line 415, ../sass/screen.scss */
+/* line 418, ../sass/screen.scss */
 .about header {
   float: right;
   width: 40%;
   margin-left: 0.6em; }
-/* line 420, ../sass/screen.scss */
+/* line 423, ../sass/screen.scss */
 .about img {
   display: block;
   max-width: 60px;
   margin: 0 auto;
   border: 0; }
-/* line 426, ../sass/screen.scss */
+/* line 429, ../sass/screen.scss */
 .about h1 {
   padding-bottom: 1em;
   color: white;
   text-align: center;
   text-transform: none;
   font-size: 100%; }
-  /* line 432, ../sass/screen.scss */
+  /* line 435, ../sass/screen.scss */
   .about h1 em {
     color: white;
     font-size: 220%;
     font-weight: bold;
     margin-bottom: .2em;
     display: block; }
-/* line 440, ../sass/screen.scss */
+/* line 443, ../sass/screen.scss */
 .about em {
   display: inline;
   font-size: 100%;
   color: #a1e5df;
   font-weight: bold; }
 
-/* line 448, ../sass/screen.scss */
+/* line 451, ../sass/screen.scss */
 form {
   margin-top: 0.6em; }
-  /* line 450, ../sass/screen.scss */
+  /* line 453, ../sass/screen.scss */
   form label {
     display: block;
     margin-bottom: 0.6em; }
-  /* line 454, ../sass/screen.scss */
+  /* line 457, ../sass/screen.scss */
   form input, form textarea {
     width: 100%;
     margin-bottom: 1.5em;
@@ -562,7 +565,7 @@ form {
     opacity: 0.9;
     text-shadow: white 1px 1px 1px;
     border: 0; }
-    /* line 463, ../sass/screen.scss */
+    /* line 466, ../sass/screen.scss */
     form input:focus, form textarea:focus {
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
       opacity: 1;
@@ -570,7 +573,7 @@ form {
       -webkit-box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.8);
       -moz-box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.8);
       box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.8); }
-  /* line 469, ../sass/screen.scss */
+  /* line 472, ../sass/screen.scss */
   form input[type="submit"] {
     background: #12679b;
     color: white;
@@ -580,7 +583,7 @@ form {
     opacity: 0.7;
     text-shadow: none;
     margin-bottom: 0; }
-    /* line 477, ../sass/screen.scss */
+    /* line 480, ../sass/screen.scss */
     form input[type="submit"]:hover, form input[type="submit"]:focus {
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
       opacity: 1;
@@ -588,13 +591,13 @@ form {
       -webkit-box-shadow: 0 0.3em 0 #0a3956;
       -moz-box-shadow: 0 0.3em 0 #0a3956;
       box-shadow: 0 0.3em 0 #0a3956; }
-    /* line 482, ../sass/screen.scss */
+    /* line 485, ../sass/screen.scss */
     form input[type="submit"]:active {
       -webkit-box-shadow: inset 0 0.3em 0 #0a3956;
       -moz-box-shadow: inset 0 0.3em 0 #0a3956;
       box-shadow: inset 0 0.3em 0 #0a3956; }
 
-/* line 487, ../sass/screen.scss */
+/* line 490, ../sass/screen.scss */
 .response {
   display: none;
   color: white;
@@ -614,32 +617,32 @@ form {
   width: 40%;
   left: 30%; }
 
-/* line 500, ../sass/screen.scss */
+/* line 503, ../sass/screen.scss */
 .success {
   display: block;
   background: #008d00 url(../images/icon-success.png) no-repeat 5% 50%; }
 
-/* line 504, ../sass/screen.scss */
+/* line 507, ../sass/screen.scss */
 .waiting {
   display: block;
   background: #12679b; }
 
-/* line 508, ../sass/screen.scss */
+/* line 511, ../sass/screen.scss */
 .error {
   display: block;
   background: #8d0000; }
 
-/* line 512, ../sass/screen.scss */
+/* line 515, ../sass/screen.scss */
 input.error, textarea.error {
   background: #c00000 url(../images/icon-error.png) no-repeat 97% 7px;
   color: white; }
 
-/* line 519, ../sass/screen.scss */
+/* line 522, ../sass/screen.scss */
 .no-rgba .utilities {
   background: transparent;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#40000000,endColorstr=#40000000);
   zoom: 1; }
-/* line 525, ../sass/screen.scss */
+/* line 528, ../sass/screen.scss */
 .no-rgba .main .module {
   background: transparent;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#70000000,endColorstr=#70000000);
