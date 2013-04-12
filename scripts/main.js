@@ -99,4 +99,8 @@
 		}
 	});
 
+	//ie8 nth-child fix
+	$('.lt-ie9 .column:even').css('margin-right','2%');
+	$('.lt-ie9 .column:odd').css('margin-left','2%');
+
 })();
