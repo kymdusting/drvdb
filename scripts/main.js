@@ -35,7 +35,7 @@
 					a.on('keyup', function() {
 						console.log($(this).val());
 						($(this).val()) ? $(this).removeClass('error') : $(this).addClass('error');
-					})
+					});
 					valid = false;
 				}
 			}
@@ -102,5 +102,32 @@
 	//ie8 nth-child fix
 	$('.lt-ie9 .column:even').css('margin-right','2%');
 	$('.lt-ie9 .column:odd').css('margin-left','2%');
+
+	// Product Description switch
+	var p = $('.product p');
+	// if (window.console) console.log(p);
+	p.each(function(index) {
+		var that = $(this);
+		// if (window.console) console.log(this);
+		var a = $('<a></a>', {
+			href: '#',
+			text: 'Read Description'
+		}).insertBefore(this);
+		// if (window.console) console.log(a);
+		a.on('click', function() {
+			// console.log(that);
+			l = $(this);
+			(that.hasClass('appear')) ?
+				that.slideUp(120, function(){
+					that.removeClass('appear').siblings('dl, img').slideDown(120);
+					l.text('Read Description');
+				}) :
+				that.css('display', 'none').addClass('appear').siblings('dl, img').slideUp(120, function(){
+					that.slideDown(120);
+					l.text('Hide Description');
+				});
+			return false;
+		});
+	});
 
 })();

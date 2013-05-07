@@ -78,4 +78,22 @@
   });
   $(".lt-ie9 .column:even").css("margin-right", "2%");
   $(".lt-ie9 .column:odd").css("margin-left", "2%");
+  var t = $(".product p");
+  t.each(function(e) {
+    var t = $(this), n = $("<a></a>", {
+      href: "#",
+      text: "Read Description"
+    }).insertBefore(this);
+    n.on("click", function() {
+      l = $(this);
+      t.hasClass("appear") ? t.slideUp(120, function() {
+        t.removeClass("appear").siblings("dl, img").slideDown(120);
+        l.text("Read Description");
+      }) : t.css("display", "none").addClass("appear").siblings("dl, img").slideUp(120, function() {
+        t.slideDown(120);
+        l.text("Hide Description");
+      });
+      return !1;
+    });
+  });
 })();

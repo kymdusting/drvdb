@@ -1,5 +1,5 @@
 // Google fonts
-@import url(http://fonts.googleapis.com/css?family=Varela);
+@import url(http://fonts.googleapisitermom/css?family=Varela);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:700);
 
 // Compass shtuff
@@ -396,14 +396,20 @@ img {
 	}
 }
 .product {
-	min-height: 225px;
+	min-height: 240px;
+	h1 {
+		font-size: 100%;
+	}
 	img {
 		float: right;
 		max-width: 100px;
-		display: none;
+		margin-bottom: $padding/5;
 	}
 	dt {
 		display: inline;
+	}
+	dl dd {
+		font-size: 100%;
 	}
 	.price {
 		background: $white;
@@ -413,6 +419,46 @@ img {
 		margin: $padding/5 0;
 		line-height: $baseLineHeight;
 	}
+	.js p {
+		position: absolute;
+		left: -9999px;
+		top: 0;
+	}
+	p {
+		padding-top: $padding/2;
+		font-size: 90%;
+		color: $white;
+	}
+	a {
+		clear: right;
+		background: $action;
+		color: $white;
+		padding: $padding/7 0;
+		display: block;
+		text-align: center;
+		font-size: 100%;
+		@include opacity(.7);
+		@include text-shadow(none);
+		margin-bottom: 0;
+		&:hover, &:focus {
+			@include opacity(1);
+			@include text-shadow($black 1px 1px 1px);
+			@include box-shadow(0 $buttonLight 0 darken($action, 15%));
+			text-decoration: none;
+		}
+		&:active {
+			@include box-shadow(inset 0 $buttonLight 0 darken($action, 15%));
+			text-decoration: none;
+		}
+	}
+}
+.js .product p {
+	position: absolute;
+	left: -9999px;
+	top: 0;
+}
+.js .product p.appear {
+	position: static;
 }
 .about {
 	header {
