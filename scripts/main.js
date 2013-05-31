@@ -130,4 +130,24 @@
 		});
 	});
 
+	// Even hieght product containers
+	var r = $('.product');
+
+	r.each(function(index) {
+		var that = $(this),
+				tw = that.outerHeight();
+		// adjust long images placement
+		if (that.find('img').height() > 110) {
+			that.find('img').css('margin-top','-15px');
+	  }
+		// get the even columns
+	  if (index % 2 === 0) {
+	  	var nw = that.next('.product').outerHeight();
+	  	var hival = Math.max(tw,nw);
+	  	if (window.console) console.log('left: '+tw+' right: '+nw+' hival: '+hival);
+	  	that.css('min-height',hival);
+	  	that.next('.product').css('min-height',hival);
+	  }
+	});
+
 })();

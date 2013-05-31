@@ -96,4 +96,15 @@
       return !1;
     });
   });
+  var n = $(".product");
+  n.each(function(e) {
+    var t = $(this), n = t.outerHeight();
+    t.find("img").height() > 110 && t.find("img").css("margin-top", "-15px");
+    if (e % 2 === 0) {
+      var r = t.next(".product").outerHeight(), i = Math.max(n, r);
+      window.console && console.log("left: " + n + " right: " + r + " hival: " + i);
+      t.css("min-height", i);
+      t.next(".product").css("min-height", i);
+    }
+  });
 })();
